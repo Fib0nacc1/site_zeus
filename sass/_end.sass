@@ -1,3 +1,30 @@
+.footer
+  background-image: url("../img/main_bgi1.jpg")
+  width: 100%
+  height: 3500px
+  background-size: cover
+.craft
+  padding: 100px 0
+  position: relative
+  h4
+    color: $mainColorGold
+    margin-bottom: 7rem
+    font-family: $titleFont2
+    font-size: 4em
+    line-height: 1em
+  p
+    margin-bottom: 5rem
+    color: $mainColor
+    font-size: 25px
+    font-family: $mainFont
+  &__box
+    max-width: 65%
+  img
+    position: absolute
+    right: 0
+    top: -150px
+    width: 35%
+    z-index: 50
 .end
   position: relative
   display: flex
@@ -21,15 +48,21 @@
 
 .end__btn
   height: 50px
-  width: 150px
-  border: 0
-  box-shadow: inset 0 0 0 2px #404429
   color: #fff
   text-align: center
   position: relative
   vertical-align: enddle
   background-color: rgba(35, 38, 21, .9)
-
+  box-sizing: border-box
+  display: block
+  text-align: center
+  text-transform: uppercase
+  font: 1rem $mainFont
+  padding: 11px 0
+  border: 0
+  box-shadow: inset 0 0 0 2px #404429
+  max-width: 150px
+  margin: 20px auto
 
 .end__btn:before, .end__btn:after
   box-sizing: border-box
