@@ -1,12 +1,75 @@
+@keyframes box
+  0%
+    width: 0
+  100%
+    width: 100%
 .mid
   position: relative
   height: 685px
   background: linear-gradient(to bottom, #1a1c0f, #13150c)
 
+
   &__btn
-    margin-top: 3rem
-    margin-left: 5rem
-    background-color: #272a18
+    height: 50px
+    width: 150px
+    border: 0
+    box-shadow: inset 0 0 0 2px #404429
+    color: #fff
+    margin-left: 6em
+    text-align: center
+    position: relative
+    vertical-align: middle
+    background-color: rgba(35, 38, 21, .9)
+
+
+  .mid__btn:before, .mid__btn:after
+    box-sizing: border-box
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+
+
+  .mid__btn
+    -webkit-transition: color 0.25s
+    transition: color 0.25s
+
+  .mid__btn:before, .mid__btn:after
+    border: 2px solid transparent
+    width: 0
+    height: 0
+
+  .mid__btn:before
+    top: 0
+    left: 0
+
+  .mid__btn:after
+    bottom: 0
+    right: 0
+
+  .mid__btn:hover
+    width: 100%
+    color: $mainColorGold
+    background-color: rgba(75, 77, 31, .5)
+
+
+  .mid__btn:hover:before, .mid__btn:hover:after
+    width: 100%
+    height: 100%
+
+  .mid__btn:hover:before
+    border-top-color: $mainColorGold
+    border-right-color: $mainColorGold
+    -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s
+
+  .mid__btn:hover:after
+    border-bottom-color: $mainColorGold
+    border-left-color: $mainColorGold
+    -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s
+
+
   &__img
     position: absolute
     right: 0
