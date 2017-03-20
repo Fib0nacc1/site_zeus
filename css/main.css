@@ -2,97 +2,129 @@ body {
   font-family: "AmiriRegular", sans-serif;
   font-size: 16px;
   position: relative;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 h1, h2, h3, h4, h5, h6, ul, body, p {
-  margin: 0; }
+  margin: 0;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 h1, h2, h3, h4 {
   font-family: "CinzelRegular";
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 p {
-  font-family: "AmiriRegular"; }
+  font-family: "AmiriRegular";
+}
 
 .container,
 .flex_container {
   width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+}
 
 .flex_container {
-  display: flex; }
+  display: flex;
+}
 
 @font-face {
   font-family: "AmiriRegular";
   src: url("../fonts/amiri-regular.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+}
+
 @font-face {
   font-family: "AmiriSlanted";
   src: url("../fonts/amiri-slanted.ttf") format("truetype");
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+}
+
 @font-face {
   font-family: "CinzelRegular";
   src: url("../fonts/cinzelregular.otf") format("opentype");
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+}
+
 @font-face {
   font-family: "CinzelBlack";
   src: url("../fonts/cinzelblack.otf") format("opentype");
   font-style: normal;
-  font-weight: normal; }
+  font-weight: normal;
+}
+
 .footer {
   background-image: url("../img/main_bgi1.jpg");
   width: 100%;
   height: 3500px;
-  background-size: cover; }
+  background-size: cover;
+}
 
 .craft {
   padding: 100px 0;
-  position: relative; }
-  .craft h4 {
-    color: #cdb378;
-    margin-bottom: 7rem;
-    font-family: "CinzelBlack", sans-serif;
-    font-size: 4em;
-    line-height: 1em; }
-  .craft p {
-    margin-bottom: 5rem;
-    color: #b4ba98;
-    font-size: 25px;
-    font-family: "AmiriRegular", sans-serif; }
-  .craft__box {
-    max-width: 65%; }
-  .craft img {
-    position: absolute;
-    right: 0;
-    top: -150px;
-    width: 35%;
-    z-index: 50; }
+  position: relative;
+}
+
+.craft h4 {
+  color: #cdb378;
+  margin-bottom: 7rem;
+  font-family: "CinzelBlack", sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+}
+
+.craft p {
+  margin-bottom: 5rem;
+  color: #b4ba98;
+  font-size: 25px;
+  font-family: "AmiriRegular", sans-serif;
+}
+
+.craft__box {
+  max-width: 65%;
+}
+
+.craft img {
+  position: absolute;
+  right: 0;
+  top: -150px;
+  width: 35%;
+  z-index: 50;
+}
 
 .end {
   position: relative;
   display: flex;
   justify-content: center;
-  align-self: center; }
-  .end__box {
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    margin: 20px auto; }
-    .end__box h3 {
-      color: #cdb378;
-      margin-bottom: 2rem;
-      margin-top: 100px;
-      font-size: 45px; }
-    .end__box p {
-      color: #b4ba98;
-      margin-bottom: 5rem;
-      font-size: 25px; }
+  align-self: center;
+}
+
+.end__box {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.end__box h3 {
+  color: #cdb378;
+  margin-bottom: 2rem;
+  margin-top: 100px;
+  font-size: 45px;
+}
+
+.end__box p {
+  color: #b4ba98;
+  margin-bottom: 5rem;
+  font-size: 25px;
+}
 
 .end__btn {
   height: 50px;
@@ -110,49 +142,59 @@ p {
   border: 0;
   box-shadow: inset 0 0 0 2px #404429;
   max-width: 150px;
-  margin: 20px auto; }
+  margin: 20px auto;
+}
 
 .end__btn:before, .end__btn:after {
   box-sizing: border-box;
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .end__btn {
   -webkit-transition: color 0.25s;
-  transition: color 0.25s; }
+  transition: color 0.25s;
+}
 
 .end__btn:before, .end__btn:after {
   border: 2px solid transparent;
   width: 0;
-  height: 0; }
+  height: 0;
+}
 
 .end__btn:before {
   top: 0;
-  left: 0; }
+  left: 0;
+}
 
 .end__btn:after {
   bottom: 0;
-  right: 0; }
+  right: 0;
+}
 
 .end__btn:hover {
   width: 100%;
   color: #cdb378;
-  background-color: rgba(75, 77, 31, 0.5); }
+  background-color: rgba(75, 77, 31, 0.5);
+}
 
 .end__btn:hover:before, .end__btn:hover:after {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .end__btn:hover:before {
   border-top-color: #cdb378;
   border-right-color: #cdb378;
   -webkit-transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s; }
+  transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+}
 
 .end__btn:hover:after {
   border-bottom-color: #cdb378;
   border-left-color: #cdb378;
   -webkit-transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s; }
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
